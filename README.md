@@ -1,5 +1,6 @@
 # currencyExchanger
 
+[![codecov](https://codecov.io/github/sebastianmichalski/currencyExchanger/graph/badge.svg?token=9WNL01TQG2)](https://codecov.io/github/sebastianmichalski/currencyExchanger)
 
 > ### PREREQUISITE
 > 
