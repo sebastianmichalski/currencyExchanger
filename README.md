@@ -1,7 +1,7 @@
 # currencyExchanger
 
 [![codecov](https://codecov.io/github/sebastianmichalski/currencyExchanger/graph/badge.svg?token=9WNL01TQG2)](https://codecov.io/github/sebastianmichalski/currencyExchanger)
-
+![ci status](https://github.com/sebastianmichalski/currencyExchanger/actions/workflows/maven.yml/badge.svg)
 > ### PREREQUISITE
 > 
 > Java 17 JDK installed, environment variables are set up: 
