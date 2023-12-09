@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://{{ URL_PLACEHOLDER}}:{{ PORT_PLACEHOLDER}}/{{ DB_NAME_PLACEHOLDER}}
+    driver-class-name: org.postgresql.Driver
+    username: {{USERNAME_PLACEHOLDER}}
+    password: {{PASSWORD_PLACEHOLDER}}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+api-key: {{API_KEY_PLACEHOLDER}}
+api-base-url: {{API_BASE_URL_PLACEHOLDER}}
+configuration:
+  defaultSpread: 2.75
+  baseCurrency: EUR
+  spreads:
+    JPY: 3.25
+    HKD: 3.25
+    KRW: 3.25
+    MYR: 4.25
+    INR: 4.25
+    MXN: 4.25
+    RUB: 6.0
+    CNY: 6.0
+    ZAR: 6.0
