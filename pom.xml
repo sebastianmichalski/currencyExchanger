@@ -21,6 +21,7 @@
 		<junit-jupiter-engine.version>5.10.0</junit-jupiter-engine.version>
 		<log4j-spring-boot.version>3.0.0-alpha1</log4j-spring-boot.version>
 		<spring-boot-starter-log4j2.version>3.1.2</spring-boot-starter-log4j2.version>
+		<jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -108,6 +109,25 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
