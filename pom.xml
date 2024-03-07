@@ -8,7 +8,6 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.marcura</groupId>
 	<artifactId>currencyExchanger</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>currencyExchanger</name>
@@ -130,8 +129,8 @@
 				</executions>
 				<configuration>
 					<excludes>
-						<exclude>com/marcura/currency/exchanger/CurrencyExchangerApplication.class</exclude>
-						<exclude>com/marcura/currency/exchanger/dto/*</exclude>
+						<exclude>com/currency/exchanger/CurrencyExchangerApplication.class</exclude>
+						<exclude>com/currency/exchanger/dto/*</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
